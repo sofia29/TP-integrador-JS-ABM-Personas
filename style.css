@@ -163,6 +163,10 @@ cursor: pointer;
 }
 
 
+form {
+    padding: 15px;
+}
+
 .nomostrar {
     display: none;
 }
@@ -175,6 +179,7 @@ cursor: pointer;
     top: 30px;
     left: 500px;
     color: #566787;
+    padding-left: 5px;
 }
 
 .mensajeBorrar {

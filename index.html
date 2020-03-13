@@ -31,7 +31,7 @@
     </div>
     <div class="contenedorTabla">
       <div class="contenedorBusqueda">
-        <input type="text" placeholder=" Filter..." size="45" class="cajaBusqueda">
+        <input type="text" placeholder=" Filter..." size="45" class="cajaBusqueda" id="boxFilter"> 
       </div>
       <table>
         <tr>
@@ -68,21 +68,21 @@
     <form action="" method="get" enctype="application/x-www-form-urlencoded" name="login">
 
       <p class="tituloFormulario">Name</p>
-      <input type="text" id="name" name="name" size="40" />
+      <input type="text" id="name" name="name" size="40" maxlength="50"/>
       <div id="mensajeErrorNombre" class="estiloError"></div>
       <p class="tituloFormulario">Email</p>
       <input type="email" id="email" name="email" size="40" />
       <div id="mensajeErrorEmail" class="estiloError"></div>
       <p class="tituloFormulario">Address</p>
-      <textarea id="address" rows="4" cols="40"></textarea>
+      <textarea id="address" rows="4" cols="41" maxlength="60"></textarea>
       <div id="mensajeErrorDireccion" class="estiloError"></div>
       <p class="tituloFormulario">Phone </p>
-      <input type="number" id="phone" name="phone" size="40" />
+      <input type="text" id="phone" name="phone" size="40" />
       <div id="mensajeErrorTelefono" class="estiloError"></div>
       <hr>
       <div class="botonesFormulario">
-        <input type="submit" class="boton" name="submit" id="cancel" value="Cancel" />
-        <input type="submit" class="boton" name="submit" id="add" value="Add" />
+        <input type="button" class="boton" name="submit" id="cancelAdd" value="Cancel" />
+        <input type="submit" class="boton" name="submit" id="saveAdd" value="Add" />
       </div>
     </form>
   </div>
@@ -100,17 +100,17 @@
     <form action="" method="get" enctype="application/x-www-form-urlencoded" name="login">
 
       <p class="tituloFormulario">Name</p>
-      <input type="text" id="name" name="name" size="40" />
+      <input type="text" id="name" name="name" size="40" maxlength="50" />
       <p class="tituloFormulario">Email</p>
       <input type="email" id="email" name="email" size="40" />
       <p class="tituloFormulario">Address</p>
-      <textarea id="address" rows="4" cols="40"></textarea>
+      <textarea id="address" rows="4" cols="42" maxlength="60"></textarea>
       <p class="tituloFormulario">Phone </p>
-      <input type="number" id="phone" name="phone" size="40" />
+      <input type="text" id="phone" name="phone" size="40" />
       <hr>
       <div class="botonesFormulario">
-        <input type="submit" class="boton" name="submit" id="cancel" value="Cancel" />
-        <input type="submit" class="boton" name="submit" id="save" value="Save" />
+        <input type="button" class="boton" name="submit" id="cancelEdit" value="Cancel" />
+        <input type="submit" class="boton" name="submit" id="saveEdit" value="Save" />
       </div>
     </form>
   </div>
@@ -128,8 +128,8 @@
     <p class="mensajeBorrar">Are you sure you want to delete these records?</p>
     <p class="alertaBorrar">This action cannot be undone.</p>
     <div class="botonesFormulario">
-      <input type="submit" class="boton" name="submit" id="cancel" value="Cancel" />
-      <input type="submit" class="boton" name="submit" id="add" value="Delete" />
+      <input type="button" class="boton" name="submit" id="cancel" value="Cancel" />
+      <input type="button" class="boton" name="submit" id="add" value="Delete" />
     </div>
   </div>
 
